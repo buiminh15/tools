@@ -15,17 +15,17 @@ fs.readdir(dir, (err, files) => {
         if (index.toString().length === 1) {
             base64Str  = fs.readFileSync(`./manga/${'00'+index}.txt`, 'utf8')   
             var path = './images/'
-            var optionalObj = {'fileName': `${'00'+index}`, 'type':'jpg'};
+            var optionalObj = {'fileName': `${'00'+index}`, 'type':'png'};
         }
         if (index.toString().length === 2) {
             base64Str  = fs.readFileSync(`./manga/${'0'+index}.txt`, 'utf8')   
             var path = './images/'
-            var optionalObj = {'fileName': `${'0'+index}`, 'type':'jpg'};
+            var optionalObj = {'fileName': `${'0'+index}`, 'type':'png'};
         }
         if (index.toString().length === 3) {
             base64Str  = fs.readFileSync(`./manga/${index}.txt`, 'utf8')   
             var path = './images/'
-            var optionalObj = {'fileName': `${index}`, 'type':'jpg'};
+            var optionalObj = {'fileName': `${index}`, 'type':'png'};
         }
   
         base64ToImage(base64Str ,path,optionalObj); 
