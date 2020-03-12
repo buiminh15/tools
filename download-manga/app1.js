@@ -44,7 +44,7 @@ const fs = require('fs');
             await page.waitFor(3000)
             await browser.close()
             setTimeout(function(){index++;  console.log(index); }, 5000);
-        } while(index < 12) 
+        } while(index < 126) 
       })()
      
        
