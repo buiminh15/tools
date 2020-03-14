@@ -5,11 +5,11 @@ const bookName = require('./utils/common')
 function apicall(urlApi, index) {
     request(urlApi, function (error, response, body) {
         if (error) {
-            console.log("error");
+            console.log(error);
         }
         let dataStr = body;
-        dataStr = dataStr.replace(/^/, "data:image/png;base64,");
-
+        // dataStr = dataStr.replace(/^/, "data:image/png;base64,");
+        dataStr = "data:image/png;base64," + dataStr;
         let fileName = index;
         if (!dataStr.includes("Not Found")) {
             if (fileName.toString().length === 1) {
@@ -32,7 +32,7 @@ function apicall(urlApi, index) {
 }
 
 let promises = [];
-for (let i = 0; i < 300; i++) {
+for (let i = 100; i < 101; i++) {
     let uri = `https://kids-km3.shogakukan.co.jp/contents/${bookName}/${i}/base64`;
     promises.push(apicall(uri,i));
 }
