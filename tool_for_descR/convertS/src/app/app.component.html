@@ -1,0 +1,25 @@
+
+<h1>Convert Tag</h1>
+
+
+<form #inputForm="ngForm" (ngSubmit)="onSubmit(inputForm)">
+
+  <textarea id="w3mission" rows="30" cols="50" [(ngModel)]="inputText" name="inputText"></textarea>
+
+
+  <button type="submit" [disabled]="!inputForm.form.valid">
+    Convert
+  </button>
+
+  <button type="button" (click)="inputForm.reset()">
+    Reset
+  </button>
+</form>
+
+
+<form #outputForm="ngForm" (ngSubmit)="onSubmit(outputForm)">
+
+  <textarea id="w3mission" rows="30" cols="50"  [(ngModel)]="outputText" [ngModelOptions]="{standalone: true}" readonly></textarea>
+
+
+</form>

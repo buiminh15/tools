@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "397271536948",
+    "firebase_url": "https://xtheta-db9fe.firebaseio.com",
+    "project_id": "xtheta-db9fe",
+    "storage_bucket": "xtheta-db9fe.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:397271536948:android:4e245a80a0ad6eead60161",
+        "android_client_info": {
+          "package_name": "com.awesomeproject"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "397271536948-3avd8vaglpnl7sfh22bsm7t9prl3b3bl.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyA-s2hab-YjxHCl90xf6cCTqCpJCJMJ6Lw"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "397271536948-3avd8vaglpnl7sfh22bsm7t9prl3b3bl.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
