@@ -15,15 +15,15 @@ export class AppComponent {
 
       console.log(form.value.inputText)
       let str = form.value.inputText;
-      let regex1 = /<.*?>/gim;
-      let originArr = str.match(regex1);
-      let uppercaseArr=[]
+      const regex1 = /<.*?>/gim;
+      const originArr = str.match(regex1);
+      const uppercaseArr=[]
       originArr.forEach((el,i) => {
           uppercaseArr.push(this.convertStr(el))
       });
 
       for (let index = 0; index < originArr.length; index++) {
-          str =str.replace(originArr[index], uppercaseArr[index])
+          str = str.replace(originArr[index], uppercaseArr[index])
 
       }
 
@@ -35,9 +35,9 @@ export class AppComponent {
       if (!str.includes(" ")) {
           return str.toUpperCase()
       }
-      let str1="";
-      let regex2 = /(^<\w+)|("(.*?)")/gmi;
-      let result2 = str.match(regex2)
+      const str1="";
+      const regex2 = /(^<\w+)|("(.*?)")/gmi;
+      const result2 = str.match(regex2)
       result2.forEach(element => {
           str = str.replace(element, element.toUpperCase())
       });
